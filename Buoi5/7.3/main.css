@@ -1,0 +1,22 @@
+label, input {
+    font-size: 14px;
+}
+
+div input{
+    width: 200px;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+div{
+    margin-bottom: 6px;
+}
+
+.err {
+    color: #eb4848;
+    font-size: 14px;
+    line-height: 30px;
+}

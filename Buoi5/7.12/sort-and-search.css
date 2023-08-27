@@ -1,0 +1,45 @@
+#search {
+    font-size: 14px;
+    padding: 3px;
+}
+
+.sortable {
+    margin-top: 14px;
+    border-collapse: collapse;
+}
+
+.sortable td,
+.sortable th {
+    border: solid 1px #000;
+}
+
+.sortable th {
+    background-color: #ccc;
+}
+
+.sortable .sortcol {
+    cursor: pointer;
+}
+
+.sortable .sortcol .arrow::after {
+    content: "\2195";
+}
+
+.sortable .sortcol.asc .arrow::after {
+    content: "\2191";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+.sortable .sortcol.desc .arrow::after {
+    content: "\2193";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}

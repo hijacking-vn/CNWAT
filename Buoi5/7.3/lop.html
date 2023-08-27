@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bai 7.3</title>
+</head>
+
+<body>
+    <h3>Bài 7.3</h3>
+    <form class="lop">
+        <div>
+            <label>Mã lớp:</label>
+            <input type="text" id="ma-lop" placeholder="Nhập mã lớp">
+            <span class="err" id="err-ma-lop"></span>
+        </div>
+        <div>
+            <label>Tên lớp:</label>
+            <input type="text" id="ten-lop" placeholder="Nhập tên lớp">
+            <span class="err" id="err-ten-lop"></span>
+        </div>
+        <div>
+            <label>Khóa học:</label>
+            <input type="text" id="khoa-hoc" placeholder="Nhập khóa học">
+            <span class="err" id="err-khoa-hoc"></span>
+        </div>
+        <div>
+            <label>GVCN:</label>
+            <input type="text" id="gvcn" placeholder="Nhập gvcn">
+            <span class="err" id="err-gvcn"></span>
+        </div>
+        <input type="button" value="submit" onclick="validation()">
+    </form>
+
+    <script>
+        function validation() {
+            let maLop = document.getElementById('ma-lop').value;
+            let tenLop = document.getElementById('ten-lop').value;
+            let khoaHoc = document.getElementById('khoa-hoc').value;
+            let gvcn = document.getElementById('gvcn').value;
+
+            let submitOK = true;
+            document.getElementById('err-ma-lop').innerHTML = '';
+            document.getElementById('err-ten-lop').innerHTML = '';
+            document.getElementById('err-khoa-hoc').innerHTML = '';
+            document.getElementById('err-gvcn').innerHTML = '';
+
+
+            if (maLop.length <= 0 || maLop.length > 6) {
+                document.getElementById('err-ma-lop').innerHTML = 'Mã lớp không được để trống, tối đa 6 ký tự<br>';
+                submitOK = false;
+            }
+            if (tenLop.length <= 0 || tenLop.length > 50) {
+                document.getElementById('err-ten-lop').innerHTML = 'Tên lớp không được để trống, tối đa 50 ký tự<br>';
+                submitOK = false;
+            }
+            if (khoaHoc.length == 0 || !Number.isInteger(parseInt(khoaHoc))) {
+                document.getElementById('err-khoa-hoc').innerHTML = 'Khóa học phải là số nguyên <br>';
+                submitOK = false;
+            }
+            if (gvcn.length <= 0 || gvcn.length > 50) {
+                document.getElementById('err-gvcn').innerHTML = 'GVCN không được để trống, tối đa 50 ký tự<br>';
+                submitOK = false;
+            }
+
+            if (submitOK) submit();
+        }
+    </script>
+</body>
+
+</html>

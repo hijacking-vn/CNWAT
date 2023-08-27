@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="sort-and-search.css">
+    <title>7.12 Sắp xếp và tìm kiếm trên bảng</title>
+</head>
+<body>
+    <input type="text" id="search" placeholder="Nhập các từ cần tìm">
+    
+    <table class="sortable" id="data-table">
+        <thead>
+            <tr>
+                <th>TT</th>
+                <th class="sortcol" title="Kích vào đây để sắp xếp theo mã sản phẩm">Mã sản phẩm <span class="arrow"></span></th>
+                <th class="sortcol" title="Kích vào đây để sắp xếp theo tên sản phẩm">Tên sản phẩm <span class="arrow"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>SP001</td>
+                <td>Máy giặt</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SP002</td>
+                <td>Bếp đa năng</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SP003</td>
+                <td>Lò sưởi</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>SP004</td>
+                <td>Điều hòa nhiệt độ</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>SP005</td>
+                <td>Tủ lạnh</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="sort-and-search.js"></script>
+</body>
+</html>

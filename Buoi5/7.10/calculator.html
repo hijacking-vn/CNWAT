@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="calculator.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <table id="keypad">
+    <tbody>
+      <tr>
+        <td colspan="3">
+          <input type="text" id="read-out" value="0" readonly>
+        </td>
+        <td> </td>
+        <td><input type="button" value="C" id="btnClear" onclick="clear()"></td>
+        <td><input type="button" value="CE" onclick="clearEntry()"></td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="7" id="btn7" onclick="pressedNum(7)">
+        </td>
+        <td>
+          <input type="button" value="8" id="btn8" onclick="pressedNum(8)">
+        </td>
+        <td>
+          <input type="button" value="9" id="btn9" onclick="pressedNum(9)">
+        </td>
+        <td> </td>
+        <td>
+          <input type="button" value="+/-" id="btnNeg" onclick="neg()">
+        </td>
+        <td>
+          <input type="button" value="%" id="btnPercent" onclick="percent()">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="4" id="btn4" onclick="pressedNum(4)">
+        </td>
+        <td>
+          <input type="button" value="5" id="btn5" onclick="pressedNum(5)">
+        </td>
+        <td>
+          <input type="button" value="6" id="btn6" onclick="pressedNum(6)">
+        </td>
+        <td> </td>
+        <td>
+          <input type="button" value="+" id="btnPlus" onclick="operation('+')">
+        </td>
+        <td>
+          <input type="button" value="-" id="btnMinus" onclick="operation('-')">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="1" id="btn1" onclick="pressedNum(1)">
+        </td>
+        <td>
+          <input type="button" value="2" id="btn2" onclick="pressedNum(2)">
+        </td>
+        <td>
+          <input type="button" value="3" id="btn3" onclick="pressedNum(3)">
+        </td>
+        <td> </td>
+        <td>
+          <input type="button" value="*" id="btnMult" onclick="operation('*')">
+        </td>
+        <td>
+          <input type="button" value="/" id="btnDiv" onclick="operation('/')">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" value="0" id="btn0" onclick="pressedNum(0)">
+        </td>
+        <td>
+          <input type="button" value="." id="btnDec" onclick="decimal()">
+        </td>
+        <td colspan="3"> </td>
+        <td>
+          <input type="button" value="=" id="btnEqual" onclick="operation('=')">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="calculator.js"></script>
+</body>
+
+</html>

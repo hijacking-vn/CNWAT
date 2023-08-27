@@ -1,0 +1,29 @@
+ul.tree li {
+	list-style:none;
+}
+
+ul.tree li a {
+	text-decoration:none;
+}
+
+ul.tree li.has-children {
+	margin-left:0px;
+}
+
+ul.tree li.no-child {
+	margin-left:16px;
+}
+
+ul.tree ul {
+	margin-left: 0px;
+	padding-left:15px;
+}
+
+img.folder {
+	content: url('images/folder.png');
+	width: 18px;
+}
+
+img.minus {
+	content: url('images/minus.png');
+}

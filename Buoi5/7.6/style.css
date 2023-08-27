@@ -1,0 +1,32 @@
+table{
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: solid 1px #000;
+}
+
+th, td{
+    padding: 3px;
+}
+
+thead {
+    background-color: palevioletred;
+}
+
+.odd-row {
+    background-color: plum;
+}
+
+.even-row {
+    background-color: powderblue;
+}
+
+.selectedr {
+    background-color: yellow;
+}
+
+tr:hover {
+    background-color: rgba(5, 180, 5, 0.979);
+    cursor: pointer;
+}

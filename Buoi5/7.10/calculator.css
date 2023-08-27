@@ -1,0 +1,13 @@
+table {
+    height: 160px;
+    width: 415px;
+}
+
+table, tr, td {
+    border: 1px solid #000;
+}
+
+input {
+    width: 88%;
+    padding: 4px 10px;
+}

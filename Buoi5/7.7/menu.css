@@ -1,0 +1,55 @@
+#container {
+    display: flex;
+}
+
+#menu {
+    margin: 0;
+    margin-right: 15px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+ul li:before{
+    content: ">>";
+    font-size: 9px;
+    padding-right: 5px;
+}
+
+ul li {
+    color: rgb(100, 100, 238);
+    background-color: rgba(128, 128, 128, 0.342);
+    padding: 6px;
+    margin: 1px 0;
+}
+
+ul li:hover {
+    background-color: rgba(128, 128, 128, 0.13);
+    cursor: pointer;
+}
+
+#page-title{
+    color: blue;
+}
+
+#page-title:before{
+    content: ">>";
+    font-size: 9px;
+    padding-right: 5px;
+}
+
+.selected, .selected:hover {
+    background-color: aquamarine;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    display: none;
+}
+
+#page-title {
+    display: none;
+}

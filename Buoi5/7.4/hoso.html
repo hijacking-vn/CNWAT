@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bai 7.4</title>
+</head>
+
+<body>
+    <h3>Bài 7.4</h3>
+    <form class="lop">
+        <div>
+            <label>Mã học sinh:</label>
+            <input type="text" id="ma-hoc-sinh" placeholder="Nhập mã học sinh">
+            <span class="err" id="err-ma-hoc-sinh"></span>
+        </div>
+        <div>
+            <label>Họ tên:</label>
+            <input type="text" id="ho-ten" placeholder="Nhập họ tên">
+            <span class="err" id="err-ho-ten"></span>
+        </div>
+        <div>
+            <label>Ngày sinh:</label>
+            <input type="text" id="ngay-sinh" placeholder="Nhập ngày sinh (mm/dd/yyyy)">
+            <span class="err" id="err-ngay-sinh"></span>
+        </div>
+        <div>
+            <label>Địa chỉ:</label>
+            <input type="text" id="dia-chi" placeholder="Nhập địa chỉ">
+            <span class="err" id="err-dia-chi"></span>
+        </div>
+        <div>
+            <label>Lớp:</label>
+            <input type="text" id="lop" placeholder="Nhập lớp">
+            <span class="err" id="err-lop"></span>
+        </div>
+        <div>
+            <label>Điểm toán:</label>
+            <input type="text" id="diem-toan" placeholder="Nhập điểm toán">
+            <span class="err" id="err-diem-toan"></span>
+        </div>
+        <div>
+            <label>Điểm lý:</label>
+            <input type="text" id="diem-ly" placeholder="Nhập điểm lý">
+            <span class="err" id="err-diem-ly"></span>
+        </div>
+        <div>
+            <label>Điểm hóa:</label>
+            <input type="text" id="diem-hoa" placeholder="Nhập điểm hóa">
+            <span class="err" id="err-diem-hoa"></span>
+        </div>
+        <input type="button" value="submit" id="submit" onclick="validation()">
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

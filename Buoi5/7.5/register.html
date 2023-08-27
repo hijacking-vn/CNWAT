@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="register">
+        <div>
+            <label for="name">Họ tên:</label>
+            <input type="text" id="name" class="required">
+            <span id="err-name" class="err"></span><br>
+        </div>
+
+        <div>
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address"><br>
+        </div>
+
+        <div>
+            <label for="sexual">Giới tính:</label>
+            <input type="radio" name="sexual" id="male" checked >Nam
+            <input type="radio" name="sexual" id="female">Nữ
+            <span></span><br>
+        </div>
+
+        <div>
+            <label for="dob">Ngày sinh:</label>
+            <input type="text" name="dob" id="dob" class="required" placeholder="nn/tt/nnnn">
+            <span id="err-dob" class="err"></span><br>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" class="required">
+            <span id="err-email" class="err"></span><br>
+        </div>
+
+        <div>
+            <label for="phone-number">Điện thoại:</label>
+            <input type="text" name="phone-number" id="phone-number"> <span></span><br>
+        </div>
+
+        <div>
+            <label for="class">Khóa đăng ký:</label>
+            <input type="checkbox" name="eng" id="eng">
+            <label for="eng">Tiếng Anh</label>
+            <input type="checkbox" name="management" id="management">
+            <label for="management">Quản tri</label>
+            <input type="checkbox" name="cntt" id="cntt">
+            <label for="cntt">CNTT</label>
+            <span></span><br>
+        </div>
+
+        <div>
+            <label for="username">Tên sử dụng:</label>
+            <input type="text" name="username" id="username" class="required">
+            <span id="err-username" class="err"></span><br>
+        </div>
+
+        <div>
+            <label for="pass">Mật khẩu:</label>
+            <input type="text" name="pass" id="pass" class="required">
+            <span id="err-pass" class="err"></span><br>
+        </div>
+
+        <div>
+            <label for="re-pass">Gõ lại mật khẩu:</label>
+            <input type="text" name="re-pass" id="re-pass" class="required">
+            <span id="err-re-pass" class="err"></span><br>
+        </div>
+
+        <div>
+            <label for="note">Ghi chú:</label>
+            <textarea name="note" id="note" cols="30" rows="4"></textarea><br>
+        </div>
+
+        <div>
+            <label></label>
+            <button type="button" onclick="chapNhan()">Chấp nhận</button>
+            <button type="button" onclick="boQua()">Bỏ qua</button>
+        </div>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
